@@ -1,0 +1,8 @@
+raft:
+  bind: "127.0.0.1:7001"
+  peers:
+    - { id: 1, addr: "127.0.0.1:7001" }
+    - { id: 2, addr: "127.0.0.1:7002" }
+    - { id: 3, addr: "127.0.0.1:7003" }
+  heartbeatMs: 75
+  dataDir: ./data
